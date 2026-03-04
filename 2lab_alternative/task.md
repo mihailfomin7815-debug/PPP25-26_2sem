@@ -133,3 +133,12 @@ client = TestClient(app)
 def test_get_items():
     response = client.get("/items")
     assert response.status_code == 200
+```
+
+## Полезные инструменты
+**Swagger / OpenAPI** — FastAPI автоматически поднимает документацию:
+ - /docs — Swagger UI;
+ - /redoc — ReDoc.
+
+**vercel v0** - ИИ, которая делает фронт (по контракту API). **ФРОНТЕНД НЕ ОБЯЗАЬЕЛЬНЫЙ**, но если вам оооочень хочется, то [ссылка](https://v0.app/). И если **вы делаете фронт, то делай те его в docker**.
+
